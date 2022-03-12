@@ -11,11 +11,11 @@ class Program
         Console.WriteLine($"Witaj, {lastName}!");
 
         if (currentAge < 0 || retirementAge < 0)
-            Console.WriteLine("Wiek nie mo¿e byæ ujemny!");           
+            Console.WriteLine("Wiek nie moÅ¼e byÄ‡ ujemny!");           
         else if (currentAge < retirementAge)
             Console.WriteLine($"Do emerytury brakuje Ci {retirementAge - currentAge} lat!");            
         else
-            Console.WriteLine("Jesteœ emerytem!");
+            Console.WriteLine("JesteÅ› emerytem!");
             
         return;
 
