@@ -1,0 +1,21 @@
+Problem: Emerytura 3 [C#, mono]
+Problem jest modyfikacją problemu Emerytura 2. Wykorzystaj kod, zmodyfikuj tak, aby spełniał nowe warunki specyfikacji.
+
+Napisz program, który wczyta ze standardowego wejścia jedną linię zawierającą nazwisko, wiek osoby oraz wiek emerytalny oddzielone pojedynczą spacją.
+
+Następnie program dopisze:
+* komunikat "Wiek nie może być ujemny!" jeśli wczytana liczba określająca wiek lub wiek emerytalny jest ujemna, lub
+* komunikat spersonalizowanego powitania "Witaj emerycie {nazwisko}!" jeśli osoba osiągnęła wiek emerytalny, lub
+* komunikat "Witaj {nazwisko}! Do emerytury brakuje Ci {x} lat!" jeśli wczytany wiek osoby jest mniejszy niż wiek emerytalny, zaś x jest różnicą między wiekiem emerytalnym i wiekiem osoby. Treść komunikatu określającego brakujące lata powinna być zgodna z gramatyką języka polskiego, tzn. powiemy, że Do emerytury brakuje Ci 15 lat!, ale w innym przypadku powiemy, że Do emerytury brakuje Ci 22 lata!
+
+
+W C# dane odczytywane z konsoli, wprowadzane przez użytkownika zawsze są napisami. Jeśli chcesz je potraktować jako liczby, musisz je odpowiednio przekonwertować na liczby, aby później wykonywać operacje porównywania czy działania arytmetyczne na nich. Możesz to wykonać poleceniami Convert.ToInt32(wczytywanyNapis) lub int.Parse(wszytywanyNapis).
+W przypadku tego zadania wczytasz linię tekstu, a następnie z linii tej będziesz musiał wydobyć oczekiwane informacje. Zrealizujesz to metodą Split typu `string' patrz: How to separate strings using String.Split in C#.
+
+Na przykład:
+
+Dane wejściowe	|	Wynik
+Molenda 56 65	|	Witaj Molenda! Do emerytury brakuje Ci 9 lat!
+________________|_____________________________________________________
+Jurek 65 67	|	Witaj Jurek! Do emerytury brakuje Ci 2 lata!
+

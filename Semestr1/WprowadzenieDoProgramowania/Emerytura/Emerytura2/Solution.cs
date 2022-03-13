@@ -1,6 +1,6 @@
 ﻿using System;
 
-internal class Program
+internal class Solution
 {
     private static void Main()
     {
