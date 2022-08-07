@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace School
+namespace lab_2
 {
     internal class Task : IEquatable<Task>
     {

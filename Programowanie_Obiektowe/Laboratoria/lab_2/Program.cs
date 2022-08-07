@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace School
+namespace lab_2
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
             Teacher treacher = new Teacher("Maria Skłodowska", 50);
 
