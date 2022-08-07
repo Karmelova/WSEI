@@ -14,9 +14,3 @@ Następnie program ma wypisać na standardowe wyjście:
   
   W C# dane odczytywane z konsoli, wprowadzane przez użytkownika zawsze są napisami. Jeśli chcesz je potraktować jako liczby, musisz je odpowiednio przekonwertować na liczby, aby później wykonywać operacje porównywania czy działania arytmetyczne na nich. Możesz to wykonać poleceniami Convert.ToInt32(wczytywanyNapis) lub int.Parse(wszytywanyNapis).
   
-Na przykład:
-
-Dane wejściowe	  |    Wynik
-Molenda           |    Witaj, Molenda!
-56                |    Do emerytury brakuje Ci 9 lat!
-65                |
