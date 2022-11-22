@@ -30,7 +30,7 @@ namespace WzorzecFasada
 
         public bool IsEmailFree(string email)
         {
-            return users.Contains(email);
+            return !users.Contains(email);
         }
 
         public void AddUser(string email)
@@ -69,7 +69,7 @@ namespace WzorzecFasada
             {
                 throw new ArgumentException("Błędny email");
             }
-            if (userRepository.IsEmailFree(email))
+            if (!userRepository.IsEmailFree(email))
             {
                 throw new ArgumentException("Podany adres został już zarejestrowany w bazie");
             }
@@ -80,7 +80,7 @@ namespace WzorzecFasada
 
         public void DeleteUser(string email)
         {
-            if (!userRepository.IsEmailFree(email))
+            if (userRepository.IsEmailFree(email))
             {
                 throw new ArgumentException("Podany adres nie istnieje w bazie");
             }
